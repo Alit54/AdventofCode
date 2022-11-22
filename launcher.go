@@ -31,7 +31,7 @@ func day2() (int, int) {
 
 func day3() (int, int) {
 	// Read the question here: https://adventofcode.com/2015/day/3
-	input :=
+	return 0, 0
 }
 
 // returns a string with the entire file read
