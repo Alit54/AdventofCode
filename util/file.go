@@ -15,7 +15,7 @@ func File(name string) *os.File {
 }
 
 // Returns a slice with the entire file read.
-func ReadString(name string) []string {
+func ReadRows(name string) []string {
 	var input []string
 	file, err := os.Open(name)
 	if err != nil {

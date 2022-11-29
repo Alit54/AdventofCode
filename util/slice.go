@@ -16,5 +16,5 @@ func RemoveElement(slice []any, index int) []any {
 		panic("Index can't be less than 0")
 	}
 	support := slice[:index]
-	return append(support, slice[index:]...)
+	return append(support, slice[index+1:]...)
 }
