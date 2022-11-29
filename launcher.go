@@ -15,6 +15,7 @@ func main() {
 	// partA, partB := day1()
 	// partA, partB := day2()
 	partA, partB := day3()
+	Alit.SortString()
 	fmt.Println("Part A:", partA)
 	fmt.Println("Part B:", partB)
 }
