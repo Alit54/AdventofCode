@@ -7,6 +7,8 @@ import (
 	"os"
 	"strconv"
 	"strings"
+
+	Alit "github.com/Alit54/AdventofCode/util"
 )
 
 func main() {
