@@ -2,7 +2,7 @@ package util
 
 import "math"
 
-// Returns maximun value of a list of integers. If no element is insert, it returns minimun value available
+// Returns maximun value of a list of integers. If no element is insert, it returns minimun value available.
 func Max(values ...int) int {
 	if len(values) == 0 {
 		return math.MinInt
@@ -16,7 +16,7 @@ func Max(values ...int) int {
 	return max
 }
 
-// Returns minimun value of a list of integers. If no element is insert, it returns maximun value available
+// Returns minimun value of a list of integers. If no element is insert, it returns maximun value available.
 func Min(values ...int) int {
 	if len(values) == 0 {
 		return math.MaxInt
