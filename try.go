@@ -7,7 +7,8 @@ import (
 )
 
 func main() {
+	a := []string{"ciao", "elemtn"}
 	fmt.Println(Alit.Max())
 	fmt.Println(Alit.Min())
-	fmt.Println(Alit.
+	fmt.Println(Alit.RemoveLastElement(a))
 }
