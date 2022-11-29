@@ -9,5 +9,5 @@ import (
 func main() {
 	fmt.Println(Alit.Max())
 	fmt.Println(Alit.Min())
-	fmt.Println(Alit.SortString("Ciao"))
+	fmt.Println(Alit.
 }
