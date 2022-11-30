@@ -7,7 +7,7 @@ I make [**Advent of Code**](http://adventofcode.com/) in Go.
 
 ## Risultati
 
-### [2022](https://github.com/zAiro12/AdventOfCode/tree/main/2021)
+### [2022] (https://github.com/Alit54/AdventofCode/tree/main/2022)
 
 |         | Parte 1 | Parte 2 |
 | :-----: | :-----: | :-----: |
