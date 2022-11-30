@@ -45,11 +45,12 @@ I make [**Advent of Code**](http://adventofcode.com/) in Go.
 | [Day 24](https://adventofcode.com/2021/day/24) |  |  |
 | [Day 25](https://adventofcode.com/2021/day/25) |  |  |
 
-<br> Total Stars: 23/50 <br>
+Total Stars: 23/50 <br>
 
 ### [2015](https://github.com/zAiro12/AdventOfCode/tree/main/2015)
 |         | Part 1 | Part 2 |
 | :-----: | :-----: | :-----: |
 | [Day 1](https://adventofcode.com/2015/day/1)     | ⭐ | ⭐ |
 | [Day 2](https://adventofcode.com/2015/day/2)     | ⭐ | ⭐ |
-<br> Total Stars: 4/50
+
+Total Stars: 4/50
