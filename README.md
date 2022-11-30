@@ -13,7 +13,7 @@ I make [**Advent of Code**](http://adventofcode.com/) in Go.
 | :-----: | :-----: | :-----: |
 | [Day 1](https://adventofcode.com/2022/day/1)   |  |  |
 
-<br> Total Stars: 0/50 <br>
+Total Stars: 0/50 <br>
 
 ### [2021](https://github.com/zAiro12/AdventOfCode/tree/main/2021)
 
