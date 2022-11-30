@@ -5,13 +5,13 @@
 
 I make [**Advent of Code**](http://adventofcode.com/) in Go.
 
-## Risultati
+## Results
 
-### [2022] (https://github.com/Alit54/AdventofCode/tree/main/2022)
+### [2022](https://github.com/Alit54/AdventofCode/tree/main/2022)
 
-|         | Parte 1 | Parte 2 |
+|         | Part 1 | Part 2 |
 | :-----: | :-----: | :-----: |
-| [Giorno 1](https://adventofcode.com/2022/day/1)   |  |  |
+| [Day 1](https://adventofcode.com/2022/day/1)   |  |  |
 
 <br> Total Stars: 0/50 <br>
 
@@ -19,7 +19,7 @@ I make [**Advent of Code**](http://adventofcode.com/) in Go.
 
 |         | Parte 1 | Parte 2 |
 | :-----: | :-----: | :-----: |
-| [Giorno 1](https://adventofcode.com/2021/day/1)   | ⭐ | ⭐ |
+| [Day 1](https://adventofcode.com/2021/day/1)   | ⭐ | ⭐ |
 | [Giorno 2](https://adventofcode.com/2021/day/2)   | ⭐ | ⭐ |
 | [Giorno 3](https://adventofcode.com/2021/day/3)   | ⭐ | ⭐ |
 | [Giorno 4](https://adventofcode.com/2021/day/4)   | ⭐ | ⭐ |
