@@ -29,3 +29,21 @@ func Min(values ...int) int {
 	}
 	return min
 }
+
+// Returns sum of values
+func Sum(values ...int) int {
+	sum := 0
+	for _, v := range values {
+		sum += v
+	}
+	return sum
+}
+
+// Returns product of values
+func Product(values ...int) int {
+	product := 0
+	for _, v := range values {
+		product *= v
+	}
+	return product
+}
