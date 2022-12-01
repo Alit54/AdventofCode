@@ -41,7 +41,6 @@ func partB(input string) int {
 	count, support := 0, 0
 	top := [3]int{0, 0, 0}
 	f := Alit.File(input)
-	defer f.Close()
 	scanner := bufio.NewScanner(f)
 	for scanner.Scan() {
 		support, _ = strconv.Atoi(scanner.Text())

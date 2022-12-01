@@ -7,11 +7,12 @@ import (
 
 // Returns the file already opened.
 func File(name string) *os.File {
-	f, err := os.Open(name)
+	file, err := os.Open(name)
 	if err != nil {
 		panic("File not found")
 	}
-	return f
+	defer file.Close()
+	return file
 }
 
 // Returns a slice with the entire file read.
