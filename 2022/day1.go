@@ -64,6 +64,7 @@ func partB(input string) int {
 				count = 0
 				continue
 			}
+			count = 0
 		}
 		count += support
 	}
