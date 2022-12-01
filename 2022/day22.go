@@ -1,5 +1,5 @@
 package main
 
-func day22(input string) (int, int) {
+func Day22(input string) (int, int) {
 	return 0, 0
 }
