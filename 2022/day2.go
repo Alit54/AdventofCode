@@ -6,7 +6,7 @@ import (
 	"os"
 	"strings"
 
-	Alit "github.com/Alit54/General/gofunc"
+	Alit "github.com/Alit54/AdventofCode/util"
 )
 
 func main() {
