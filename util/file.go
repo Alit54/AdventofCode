@@ -11,7 +11,6 @@ func File(name string) *os.File {
 	if err != nil {
 		panic("File not found")
 	}
-	defer file.Close()
 	return file
 }
 
@@ -22,7 +21,6 @@ func ReadRows(name string) []string {
 	if err != nil {
 		panic("File not found")
 	}
-	defer file.Close()
 	scanner := bufio.NewScanner(file)
 	for scanner.Scan() {
 		input = append(input, scanner.Text())
