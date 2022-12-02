@@ -2,23 +2,23 @@ package main
 
 import (
 	"bufio"
-	"fmt"
-	"os"
 	"strconv"
 
 	Alit "github.com/Alit54/AdventofCode/util"
 )
 
-func main() {
-	fmt.Println(Day1(os.Args[1]))
-}
+/*func main() {
+	partA, partB := Day1(os.Args[1])
+	fmt.Println("Part A:", partA)
+	fmt.Println("Part B:", partB)
+}*/
 
 func Day1(input string) (int, int) {
-	return partA(input), partB(input)
+	return part1A(input), part1B(input)
 }
 
 // Which elf needs more energy?
-func partA(input string) int {
+func part1A(input string) int {
 	max, count, support := 0, 0, 0
 	f := Alit.File(input)
 	defer f.Close()
@@ -37,7 +37,7 @@ func partA(input string) int {
 }
 
 // Which elves need more energy (Top 3)? Returns the sum of their needs
-func partB(input string) int {
+func part1B(input string) int {
 	count, support := 0, 0
 	top := [3]int{0, 0, 0}
 	f := Alit.File(input)

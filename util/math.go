@@ -30,7 +30,7 @@ func Min(values ...int) int {
 	return min
 }
 
-// Returns sum of values
+// Returns sum of values.
 func Sum(values ...int) int {
 	sum := 0
 	for _, v := range values {
@@ -39,7 +39,7 @@ func Sum(values ...int) int {
 	return sum
 }
 
-// Returns product of values
+// Returns product of values.
 func Product(values ...int) int {
 	product := 0
 	for _, v := range values {

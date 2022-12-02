@@ -31,7 +31,7 @@ func NewLeaf(val int) *TreeNode {
 	return &TreeNode{nil, nil, val}
 }
 
-// Prints a Tree in one row
+// Prints a Tree in one row.
 func PrintTree(node *TreeNode) {
 	if node == nil {
 		return
