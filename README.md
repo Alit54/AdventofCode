@@ -11,11 +11,12 @@ I make [**Advent of Code**](http://adventofcode.com/) in Go.
 
 |         | Part 1 | Part 2 |
 | :-----: | :-----: | :-----: |
-| [Day 1](https://adventofcode.com/2022/day/1)   |  |  |
+| [Day 1](https://adventofcode.com/2022/day/1)   | ⭐ | ⭐ |
+| [Day 2](https://adventofcode.com/2022/day/2)   | ⭐ | ⭐ |
 
-Total Stars: 0/50 <br>
+Total Stars: 04/50 <br>
 
-### [2021](https://github.com/zAiro12/AdventOfCode/tree/main/2021)
+### [2021]
 
 |         | Parte 1 | Parte 2 |
 | :-----: | :-----: | :-----: |
@@ -47,7 +48,7 @@ Total Stars: 0/50 <br>
 
 Total Stars: 23/50 <br>
 
-### [2015](https://github.com/zAiro12/AdventOfCode/tree/main/2015)
+### [2015]
 |         | Part 1 | Part 2 |
 | :-----: | :-----: | :-----: |
 | [Day 1](https://adventofcode.com/2015/day/1)     | ⭐ | ⭐ |
