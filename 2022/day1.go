@@ -4,7 +4,7 @@ import (
 	"bufio"
 	"strconv"
 
-	Alit "github.com/Alit54/AdventofCode/util"
+	Alit "github.com/Alit54/General/go"
 )
 
 /*func main() {
