@@ -32,6 +32,7 @@ func Part2A(input string) int {
 	return sum
 }
 
+// How many points will we do following the REAL strategy guide?
 func part2B(input string) int {
 	sum := 0
 	file := Alit.File(input)
