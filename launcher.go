@@ -140,3 +140,9 @@ func findMin(a, b, c int) int {
 	return min
 }
 */
+
+package main
+
+func main() {
+
+}
