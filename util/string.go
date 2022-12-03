@@ -1,6 +1,7 @@
 package util
 
 import (
+	"math"
 	"sort"
 	"strings"
 )
@@ -26,5 +27,17 @@ func SplitStrings(s string, index int) []string {
 	slice := make([]string, 0)
 	slice = append(slice, s[:index])
 	slice = append(slice, s[index:])
+	return slice
+}
+
+// Returns a slice of runes with the common elements between 2 strings
+func CommonRunes(s string, t string) []rune {
+	slice := make([]rune, 0)
+	// this for needs a fix using Alit.Min instead of math.Min
+	for i := 0; i < int(math.Min(float64(len(s)), float64(len(t)))); i++ {
+		if s[i] == t[i] {
+			slice = append(slice, rune(s[i]))
+		}
+	}
 	return slice
 }

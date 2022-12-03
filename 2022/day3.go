@@ -4,6 +4,7 @@ import (
 	"bufio"
 
 	Alit "github.com/Alit54/AdventofCode/util"
+	"golang.org/x/text/search"
 )
 
 func Day3(input string) (int, int) {
@@ -17,7 +18,8 @@ func Part3A(input string) int {
 	defer file.Close()
 	scanner := bufio.NewScanner(file)
 	for scanner.Scan() {
-		row := Alit.SplitStrings()
+		row := Alit.SplitStrings(scanner.Text(), len(scanner.Text())/2)
+		common := 
 	}
 	return sum
 }
