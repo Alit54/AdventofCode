@@ -1,7 +1,6 @@
 package util
 
 import (
-	"math"
 	"sort"
 	"strings"
 )
@@ -13,7 +12,7 @@ func SortString(w string) string {
 	return strings.Join(s, "")
 }
 
-// Returns a slice of strings divided in n parts
+// Returns a slice of strings divided in n parts.
 /*func SplitEqually(s string, n int) []string {
 	slice := make([]string, 0)
 	for i := 0; i < n; i++ {
@@ -30,18 +29,42 @@ func SplitStrings(s string, index int) []string {
 	return slice
 }
 
-// Returns a slice of runes with the common elements between 2 strings
-func CommonRunes(s string, t string) []rune {
+// Returns a slice of runes with the common elements between 2 strings.
+func CommonRunes2(s string, t string) []rune {
 	slice := make([]rune, 0)
-	// this for needs a fix using Alit.Min instead of math.Min
-	for i := 0; i < int(math.Min(float64(len(s)), float64(len(t)))); i++ {
-		for j := i; j < int(math.Min(float64(len(s)), float64(len(t)))); j++ {
-			if s[i] == t[j] {
+	for i := 0; i < len(s); i++ {
+		for j := 0; j < len(t); j++ {
+			if s[i] == t[j] && !CheckRunes(slice, rune(s[i])) {
 				slice = append(slice, rune(s[i]))
 			}
 		}
 	}
 	return slice
+}
+
+// Returns a slice of runes with the common elements between 3 strings.
+func CommonRunes3(s string, t string, u string) []rune {
+	slice := make([]rune, 0)
+	for i := 0; i < len(s); i++ {
+		for j := 0; j < len(t); j++ {
+			for k := 0; k < len(u); k++ {
+				if s[i] == t[j] && t[j] == u[k] && !CheckRunes(slice, rune(s[i])) {
+					slice = append(slice, rune(s[i]))
+				}
+			}
+		}
+	}
+	return slice
+}
+
+// Returns TRUE if r is inside slice, FALSE otherwise.
+func CheckRunes(slice []rune, r rune) bool {
+	for _, v := range slice {
+		if v == r {
+			return true
+		}
+	}
+	return false
 }
 
 // Returns if a slice is all in uppercase
