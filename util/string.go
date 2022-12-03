@@ -41,3 +41,13 @@ func CommonRunes(s string, t string) []rune {
 	}
 	return slice
 }
+
+// Returns if a slice is all in uppercase
+func IsUpper(s string) bool {
+	return s == strings.ToUpper(s)
+}
+
+// Returns if a slice is all in uppercase
+func IsLower(s string) bool {
+	return s == strings.ToLower(s)
+}
