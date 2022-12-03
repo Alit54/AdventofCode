@@ -35,8 +35,10 @@ func CommonRunes(s string, t string) []rune {
 	slice := make([]rune, 0)
 	// this for needs a fix using Alit.Min instead of math.Min
 	for i := 0; i < int(math.Min(float64(len(s)), float64(len(t)))); i++ {
-		if s[i] == t[i] {
-			slice = append(slice, rune(s[i]))
+		for j := i; j < int(math.Min(float64(len(s)), float64(len(t)))); j++ {
+			if s[i] == t[j] {
+				slice = append(slice, rune(s[i]))
+			}
 		}
 	}
 	return slice
