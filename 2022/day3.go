@@ -2,15 +2,13 @@ package main
 
 import (
 	"bufio"
-	"fmt"
-	"os"
 
 	Alit "github.com/Alit54/AdventofCode/util"
 )
 
-func main() {
+/*func main() {
 	fmt.Println(Day3(os.Args[1]))
-}
+}*/
 
 func Day3(input string) (int, int) {
 	return Part3A(input), Part3B(input)
