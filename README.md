@@ -13,8 +13,9 @@ I make [**Advent of Code**](http://adventofcode.com/) in Go.
 | :-----: | :-----: | :-----: |
 | [Day 1](https://adventofcode.com/2022/day/1)   | ⭐ | ⭐ |
 | [Day 2](https://adventofcode.com/2022/day/2)   | ⭐ | ⭐ |
+| [Day 3](https://adventofcode.com/2022/day/3)   | ⭐ | ⭐ |
 
-Total Stars: 04/50 <br>
+Total Stars: 6/50 <br>
 
 ### [2021]
 
