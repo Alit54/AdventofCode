@@ -5,7 +5,7 @@ import (
 	"strconv"
 	"strings"
 
-	Alit "github.com/Alit54/AdventofCode/util"
+	Alit "github.com/Alit54/General/gofunc"
 )
 
 type elf struct {
