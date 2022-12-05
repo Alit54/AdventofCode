@@ -1,8 +1,5 @@
-module github.com/Alit54/AdventofCode
+module aoc
 
 go 1.19
 
-require (
-	github.com/Alit54/General/gofunc v0.0.0-20221202125010-b4e55d914a11 // indirect
-	github.com/zAiro12/AdventOfCode/utile v0.0.0-20221126093715-f76c565acbcb // indirect
-)
+require github.com/Alit54/General v0.0.0-20221205094921-cd19e4e318e4 // indirect
