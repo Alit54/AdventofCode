@@ -4,16 +4,16 @@ import (
 	"bufio"
 	"strconv"
 
-	Alit "github.com/Alit54/AdventofCode/util"
+	Alit "github.com/Alit54/General/gofunc"
 )
 
 /*func main() {
-	partA, partB := Day1(os.Args[1])
+	partA, partB := day1(os.Args[1])
 	fmt.Println("Part A:", partA)
 	fmt.Println("Part B:", partB)
 }*/
 
-func Day1(input string) (int, int) {
+func day1(input string) (int, int) {
 	return part1A(input), part1B(input)
 }
 

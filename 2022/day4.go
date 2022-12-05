@@ -2,17 +2,11 @@ package main
 
 import (
 	"bufio"
-	"fmt"
-	"os"
 	"strconv"
 	"strings"
 
 	Alit "github.com/Alit54/AdventofCode/util"
 )
-
-func main() {
-	fmt.Println(Day4(os.Args[1]))
-}
 
 type elf struct {
 	start  int
