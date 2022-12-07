@@ -9,9 +9,9 @@ import (
 	Alit "github.com/Alit54/General/gofunc"
 )
 
-func main() {
+/*func main() {
 	fmt.Println(Day5(os.Args[1]))
-}
+}*/
 
 func Day5(input string) (string, string) {
 	return Part5A(input), Part5B(input)
