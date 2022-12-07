@@ -36,15 +36,53 @@ func Part7A(input string) int {
 	sum := 0
 	tree := createTree(input)
 	updateFolders(tree)
+	sum = sumFilter(tree.root)
 	return sum
 }
 
 func Part7B(input string) int {
-	return 0
+	tree := createTree(input)
+	updateFolders(tree)
+	totalSpace := tree.root.size
+	spaceRequired := 30000000 - (70000000 - totalSpace)
+	dirDeleted := getDirectory(tree.root, tree.root, spaceRequired)
+	return dirDeleted.size
 }
 
 func updateFolders(tree *Tree) {
+	for _, v := range tree.root.son {
+		tree.root.size += calculateSize(v)
+	}
+}
 
+func getDirectory(leaf, min *TreeNode, limit int) *TreeNode {
+	if leaf.isDir && leaf.size > limit && leaf.size < min.size {
+		min = leaf
+	}
+	for _, v := range leaf.son {
+		min = getDirectory(v, min, limit)
+	}
+	return min
+}
+
+func calculateSize(leaf *TreeNode) int {
+	if leaf.isDir {
+		for _, v := range leaf.son {
+			leaf.size += calculateSize(v)
+		}
+	}
+	return leaf.size
+}
+
+func sumFilter(file *TreeNode) int {
+	sum := 0
+	if file.isDir && file.size < 100000 {
+		sum += file.size
+	}
+	for _, v := range file.son {
+		sum += sumFilter(v)
+	}
+	return sum
 }
 
 func createTree(input string) *Tree {
@@ -71,9 +109,9 @@ func createTree(input string) *Tree {
 		}
 		if row[1] == "ls" {
 			// There is a command: & ls
-			for ; i < len(rows); i++ {
+			for i = i + 1; i < len(rows); i++ {
 				row = strings.Split(rows[i], " ")
-				if row[1] == "$" {
+				if row[0] == "$" {
 					i--
 					break
 				}
