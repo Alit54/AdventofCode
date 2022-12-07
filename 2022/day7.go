@@ -49,7 +49,7 @@ func updateFolders(tree *Tree) {
 
 func createTree(input string) *Tree {
 	rows := Alit.ReadRows(input)
-	var tree *Tree
+	var tree Tree
 	slice := []string{"dir", "/"}
 	tree.root = createLeaf(nil, slice)
 	dir := tree.root
@@ -81,7 +81,7 @@ func createTree(input string) *Tree {
 			}
 		}
 	}
-	return tree
+	return &tree
 }
 
 // Returns a leaf for the current directory
