@@ -33,28 +33,30 @@ func Day7(input string) (int, int) {
 }
 
 func Part7A(input string) int {
+	// What is the sum of the <100k folders?
 	sum := 0
 	tree := createTree(input)
-	updateFolders(tree)
 	sum = sumFilter(tree.root)
 	return sum
 }
 
 func Part7B(input string) int {
+	// Which Directiory shall we delete?
 	tree := createTree(input)
-	updateFolders(tree)
 	totalSpace := tree.root.size
 	spaceRequired := 30000000 - (70000000 - totalSpace)
 	dirDeleted := getDirectory(tree.root, tree.root, spaceRequired)
 	return dirDeleted.size
 }
 
+// Tree was created by setting 0 to the size of the folders. This function fixes that.
 func updateFolders(tree *Tree) {
 	for _, v := range tree.root.son {
 		tree.root.size += calculateSize(v)
 	}
 }
 
+// Part B purposes: this function returns the directory to delete.
 func getDirectory(leaf, min *TreeNode, limit int) *TreeNode {
 	if leaf.isDir && leaf.size > limit && leaf.size < min.size {
 		min = leaf
@@ -65,6 +67,7 @@ func getDirectory(leaf, min *TreeNode, limit int) *TreeNode {
 	return min
 }
 
+// Returns the size of a directory
 func calculateSize(leaf *TreeNode) int {
 	if leaf.isDir {
 		for _, v := range leaf.son {
@@ -74,6 +77,7 @@ func calculateSize(leaf *TreeNode) int {
 	return leaf.size
 }
 
+// Part A purposes: this function returns the combined size of all <100k folders.
 func sumFilter(file *TreeNode) int {
 	sum := 0
 	if file.isDir && file.size < 100000 {
@@ -85,6 +89,7 @@ func sumFilter(file *TreeNode) int {
 	return sum
 }
 
+// Creates the tree from the file.
 func createTree(input string) *Tree {
 	rows := Alit.ReadRows(input)
 	var tree Tree
@@ -119,6 +124,7 @@ func createTree(input string) *Tree {
 			}
 		}
 	}
+	updateFolders(&tree)
 	return &tree
 }
 
