@@ -136,7 +136,7 @@ func createLeaf(dir *TreeNode, data []string) *TreeNode {
 		leaf.father = dir
 	}
 	leaf.name = data[1]
-	leaf.size, err = strconv.Atoi(data[0]) // if this gives error, than leaf is a directory and therefor size is zero for now.
+	leaf.size, err = strconv.Atoi(data[0]) // if this gives error, than leaf is a directory and therefore size is zero for now.
 	if err != nil {
 		leaf.isDir = true
 	} else {
