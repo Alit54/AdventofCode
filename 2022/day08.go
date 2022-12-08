@@ -68,7 +68,7 @@ func visible(matrix [][]int, row, column int) bool {
 	if row == 0 || row == len(matrix)-1 || column == 0 || column == len(matrix[row])-1 {
 		return true
 	}
-	flag := [4]bool{true, true, true, true}
+	flag := []bool{true, true, true, true}
 	// Check Up
 	for i := row - 1; i >= 0; i-- {
 		if matrix[row][column] <= matrix[i][column] {
@@ -93,7 +93,7 @@ func visible(matrix [][]int, row, column int) bool {
 			flag[3] = false
 		}
 	}
-	return flag[0] || flag[1] || flag[2] || flag[3]
+	return Alit.OR(flag...)
 }
 
 // Part B purposes: returns the visibility for a tree.
