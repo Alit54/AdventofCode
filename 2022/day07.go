@@ -1,8 +1,6 @@
 package main
 
 import (
-	"fmt"
-	"os"
 	"strconv"
 	"strings"
 
@@ -24,9 +22,9 @@ type TreeNode struct {
 	size   int
 }
 
-func main() {
+/*func main() {
 	fmt.Println(Day7(os.Args[1]))
-}
+}*/
 
 func Day7(input string) (int, int) {
 	return Part7A(input), Part7B(input)
