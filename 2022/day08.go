@@ -101,7 +101,7 @@ func visibility(matrix [][]int, row, column int) int {
 	if row == 0 || row == len(matrix)-1 || column == 0 || column == len(matrix[row])-1 {
 		return 0
 	}
-	var view [4]int
+	view := make([]int, 4)
 	// Check Up
 	for i := row - 1; i >= 0; i-- {
 		view[0]++
@@ -130,5 +130,5 @@ func visibility(matrix [][]int, row, column int) int {
 			break
 		}
 	}
-	return view[0] * view[1] * view[2] * view[3]
+	return Alit.Product(view...)
 }
