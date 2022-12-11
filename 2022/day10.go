@@ -3,18 +3,17 @@ package main
 import (
 	"bufio"
 	"fmt"
-	"os"
 	"strconv"
 	"strings"
 
 	Alit "github.com/Alit54/General/gofunc"
 )
 
-func main() {
+/*func main() {
 	fmt.Println(Day10(os.Args[1]))
 	fmt.Println()
 	Part10B(os.Args[1])
-}
+}*/
 
 func Day10(input string) int {
 	return Part10A(input)
