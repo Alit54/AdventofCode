@@ -2,8 +2,6 @@ package main
 
 import (
 	"bufio"
-	"fmt"
-	"os"
 	"strconv"
 	"strings"
 
@@ -20,9 +18,9 @@ type monkey struct {
 	activity int
 }
 
-func main() {
+/*func main() {
 	fmt.Println(Day11(os.Args[1]))
-}
+}*/
 
 func Day11(input string) (int, int) {
 	return Part11A(input), Part11B(input)

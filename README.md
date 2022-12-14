@@ -22,8 +22,9 @@ I make [**Advent of Code**](http://adventofcode.com/) in Go.
 | [Day 9](https://adventofcode.com/2022/day/9)   | ⭐ | ⭐ |
 | [Day 10](https://adventofcode.com/2022/day/10)   | ⭐ | ⭐ |
 | [Day 11](https://adventofcode.com/2022/day/11)   | ⭐ |  |
+| [Day 12](https://adventofcode.com/2022/day/12)   | ⭐ | ⭐ | Thanks Luca
 
-Total Stars: 21/50 <br>
+Total Stars: 23/50 <br>
 
 ### [2021]
 
