@@ -47,12 +47,16 @@ func Part11A(input string) int {
 }
 
 func Part11B(input string) int {
-	/*var n int
+	var n int
 	monkeys := createMonkeys(input)
+	var mcm int = 1
+	for _, v := range monkeys {
+		mcm *= v.test
+	}
 	for round := 0; round < 10000; round++ {
 		for i := 0; i < len(monkeys); i++ {
 			for _, item := range monkeys[i].items {
-				n = operation(monkeys[i].sign, item, monkeys[i].num)
+				n = operation(monkeys[i].sign, item, monkeys[i].num) % mcm
 				if test(n, monkeys[i].test) {
 					monkeys[monkeys[i].tmonkey].items = append(monkeys[monkeys[i].tmonkey].items, n)
 				} else {
@@ -63,8 +67,7 @@ func Part11B(input string) int {
 			monkeys[i].items = make([]int, 0)
 		}
 	}
-	return findActivity(monkeys)*/
-	return 0
+	return findActivity(monkeys)
 }
 
 func createMonkeys(input string) []monkey {

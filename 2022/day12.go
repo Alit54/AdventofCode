@@ -103,7 +103,7 @@ func UCSexl(start Position, matrix map[Position]Node, goal []Position) int {
 		}
 		if !EXL[pos] {
 			// Found a goal
-			if len(Alit.ResearchElement(goal), pos) != 0 {
+			if len(Alit.ResearchElement(goal, pos)) != 0 {
 				return matrix[pos].step
 			}
 			EXL[pos] = true
