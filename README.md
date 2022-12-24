@@ -29,7 +29,7 @@ I make [**Advent of Code**](http://adventofcode.com/) in Go.
 | [Day 16](https://adventofcode.com/2022/day/16)   |  |  |
 | [Day 17](https://adventofcode.com/2022/day/17)   |  |  |
 
-Total Stars: 28/50 <br>
+Total Stars: 29/50 <br>
 
 ### [2021](https://github.com/Alit54/AdventofCode/tree/main/2021)
 
