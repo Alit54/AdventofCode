@@ -2,7 +2,6 @@ package main
 
 import (
 	"bufio"
-	"fmt"
 	"os"
 	"strconv"
 	"strings"
@@ -18,9 +17,9 @@ type Waterfall struct {
 	draw map[Alit.Position]byte
 }
 
-func main() {
+/*func main() {
 	fmt.Println(Day14())
-}
+}*/
 
 func Day14() (int, int) {
 	return Part14A(), Part14B()

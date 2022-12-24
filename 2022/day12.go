@@ -3,7 +3,6 @@
 package main
 
 import (
-	"fmt"
 	"os"
 
 	Alit "github.com/Alit54/General/gofunc"
@@ -14,14 +13,14 @@ type Node struct {
 	step int
 }
 
-type Position struct {
+/*type Position struct {
 	row    int
 	column int
 }
 
 func main() {
 	fmt.Println(Day12())
-}
+}*/
 
 func Day12() (int, int) {
 	return Part12A(), Part12B()
