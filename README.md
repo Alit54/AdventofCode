@@ -25,13 +25,21 @@ I make [**Advent of Code**](http://adventofcode.com/) in Go.
 | [Day 12](https://adventofcode.com/2022/day/12)   | ⭐ | ⭐ |
 | [Day 13](https://adventofcode.com/2022/day/13)   | ⭐ | ⭐ |
 | [Day 14](https://adventofcode.com/2022/day/14)   | ⭐ | ⭐ |
-| [Day 15](https://adventofcode.com/2022/day/15)   |  |  |
+| [Day 15](https://adventofcode.com/2022/day/15)   | ⭐ |  |
 | [Day 16](https://adventofcode.com/2022/day/16)   |  |  |
 | [Day 17](https://adventofcode.com/2022/day/17)   |  |  |
+| [Day 18](https://adventofcode.com/2022/day/18)   |  |  |
+| [Day 19](https://adventofcode.com/2022/day/19)   |  |  |
+| [Day 20](https://adventofcode.com/2022/day/20)   |  |  |
+| [Day 21](https://adventofcode.com/2022/day/21)   |  |  |
+| [Day 22](https://adventofcode.com/2022/day/22)   |  |  |
+| [Day 23](https://adventofcode.com/2022/day/23)   |  |  |
+| [Day 24](https://adventofcode.com/2022/day/24)   |  |  |
+| [Day 25](https://adventofcode.com/2022/day/25)   |  |  |
 
-Total Stars: 28/50 <br>
+Total Stars: 29/50 <br>
 
-### [2021]
+### [2021](https://github.com/Alit54/AdventofCode/tree/main/2021)
 
 |         | Parte 1 | Parte 2 |
 | :-----: | :-----: | :-----: |
