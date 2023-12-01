@@ -9,12 +9,14 @@ def part1():
         s = 0
         for line in f:
             first = 0
-            last = 0
             for letter in line:
                 if letter.isdigit():
-                    if first == 0:
-                        first = letter
+                    first = letter
+                    break
+            for letter in line[::-1]:
+                if letter.isdigit():
                     last = letter
+                    break
             s += int(first + last)
         return s   
 
