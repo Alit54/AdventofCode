@@ -27,8 +27,23 @@ def part1():
 
 def part2():
     with open(file_path) as f:
-        pass
-    return 0
+        s = 0
+        for line in f:
+            line = line.rstrip()
+            numbers = {
+                'blue': 0,
+                'green': 0,
+                'red': 0
+            }
+            line = line.split(": ") # Index: line[0]; Game: line[1]
+            sets = line[1].replace(";", ",")
+            cubes = sets.split(", ")
+            for cube in cubes:
+                values = cube.split(" ")
+                if int(values[0]) > numbers[values[1]]:
+                    numbers[values[1]] = int(values[0])
+            s += numbers['blue'] * numbers['green'] * numbers['red']
+    return s
 
 print(f'Part 1: {part1()}')
 print(f'Part 2: {part2()}')
