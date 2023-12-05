@@ -19,9 +19,23 @@ def part1():
     return s
 
 def part2():
-    with open(file_prova) as f:
-        rows = f.readlines()
-    s = 0
+    with open(file_path) as f:
+        scratchcards = {i: 1 for i in range(1, 200)}
+        for line in f:
+            counter = 0
+            line = line.rstrip()
+            data = line.split(" | ")
+            winners = data[0].split(": ")[1].split()
+            for number in data[1].split():
+                if number in winners:
+                    counter+=1
+            if counter:
+                index = int(data[0].split(": ")[0][-3:])
+                for i in range(index+1, index+counter+1):
+                    scratchcards[i] += scratchcards[index]
+    s=0
+    for value in scratchcards:
+        s += scratchcards[value]
     return s
 
 print(f'Part 1: {part1()}')
