@@ -6,31 +6,30 @@ file_path = 'input/day05.txt'
 file_prova = 'input/prova.txt'
 
 def part1():
-    seed_to_soil = {i: i for i in range(100)}
-    soil_to_fertilizer = {}
-    fertilizer_to_water = {}
-    water_to_light = {}
-    light_to_temperature = {}
-    temperature_to_humidity = {}
-    humidity_to_location = {}
-    with open(file_prova) as f:
+
+    max = 10000000000
+
+    translate = {i: i for i in range(max)}
+    tmp = {i: i for i in range(max)}
+    with open(file_path) as f:
         s = 0
         seeds = f.readline().split(": ")[1].split()
-        print(seeds)     
         for line in f:
             line = line.rstrip()
-            print(line)
             if line == '':
-                # Change of Category [!!! Arrivato qui !!!]
+                translate = {i: tmp[translate[i]] for i in translate}
+                tmp = {i: i for i in range(max)}
+                print('Finita Mappa')
                 f.readline() # Skip Category Line
             else:
                 dst, src, rng = [int(elem) for elem in line.split()]
                 for i in range(rng):
-                    print(src+i, dst+i, 'Print i')
-                    seed_to_soil[src+i] = dst+i
-        for k in seed_to_soil:
-            print(k, seed_to_soil[k])            
-    return s
+                    tmp[src+i] = dst+i
+    min = translate[int(seeds[0])]
+    for elem in seeds:
+        if translate[int(elem)] < min:
+            min = translate[int(elem)]
+    return min
 
 def part2():
     with open(file_prova) as f:
